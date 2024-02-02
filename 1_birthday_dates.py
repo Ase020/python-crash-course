@@ -3,10 +3,12 @@
 
 import datetime
 
+
 def calculate_birthyear(age):
     current_year = datetime.datetime.now().year
     birth_year = current_year - age
     return birth_year
+
 
 def main():
     try:
@@ -18,5 +20,7 @@ def main():
         print("Invalid input entered")
 
 
+
 main()
+
 

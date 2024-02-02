@@ -9,6 +9,7 @@ def bill_calculator(tip, bill):
     total = bill + (bill * tip_percent)
     return total
 
+
 def main():
     try:
         bill = int(input("Enter your bill amount: "))
@@ -17,7 +18,8 @@ def main():
             tip = 15
         elif satisfaction == "great service":
             tip = 20
-        else: tip = 0
+        else:
+            tip = 0
         total = bill_calculator(tip, bill)
         print(f"Your total bill is Ksh {total}")
     except:
